@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.header {
+    background-color: #357ae8;
+    height: 500px;
+    width: 100%;
+}
+.main-container {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 800px;
+    margin: -400px auto 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #357ae8;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #000;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.birth-row{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.birth-row div {
+    text-align: left;
+}
+
+.birth-row h3 {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #000;
+}
+
+.birth-row p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.education, .achievements, .career, .p-life, .n-worth, .legacy{
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.education h2, .achievements h2, .career h2, .p-life h2, .n-worth h2, .legacy h2{
+    font-size: 1.2rem;
+    color: #357ae8;
+    margin-bottom: 10px;
+}
+
+.education ul, .achievements ol, .career ul, .p-life ul, .n-worth ul, .legacy ul{
+    padding-left: 20px;
+    margin: 0;
+    color: #000;
+}
+
+.education li, .achievements li, .career li, .p-life li, .n-worth li, .legacy li{
+    margin-bottom: 5px;
+}
+
+.read-more {
+    color: #357ae8;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+}
+
+.footer{
+    background-color:  #f4f4f4;
+    height: 100px;
+    width: 100%;
+}
