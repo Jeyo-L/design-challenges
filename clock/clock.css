@@ -101,7 +101,8 @@ header p {
 .numbers {
     font-size: 1.7rem;
     font-weight: 150;
-    color: black;
+    
+    color: rgb(243, 223, 14);
 }
 
 @media (max-width: 760px) {
@@ -126,6 +127,59 @@ header p {
 
     .numbers {
         font-size: 2rem;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 640px) {
+    .out-side-content h1 {
+        font-size: 1.7rem;
+    }
+
+    .out-side-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .out-side-content p {
+        font-size: 0.7rem;
+    }
+
+    .counters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.7rem;
+        margin: 0.7rem 0;
+    }
+
+    .numbers {
+        font-size: 1.7rem;
+        font-weight: 100;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .out-side-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .out-side-content h2 {
+        font-size: 0.7rem;
+    }
+
+    .out-side-content p {
+        font-size: 0.2rem;
+    }
+
+    .counters {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.2rem;
+        margin: 0.2rem 0;
+    }
+
+    .numbers {
+        font-size: 1.2rem;
         font-weight: 100;
     }
 }
