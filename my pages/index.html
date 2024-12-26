@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #1a73e8, #4caf50);
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    header {
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .project-card {
+        width: 150px;
+        padding: 15px;
+      }
+
+      .project-links {
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web Training Projects</h1>
+  </header>
+
+  <div class="project-links">
+    <div class="project-card">
+      <a href="https://jeyo-l.github.io/design-challenges/calculator/calculator.html">Web Calculator</a>
+    </div>
+    <div class="project-card">
+      <a href="https://jeyo-l.github.io/design-challenges/survey/index.html">Survey Form</a>
+    </div>
+    <div class="project-card">
+      <a href="https://jeyo-l.github.io/design-challenges/login-signup/login.html">Login & Signup Forms</a>
+    </div>
+    <div class="project-card">
+      <a href="https://jeyo-l.github.io/design-challenges/clock/clock.html">Counter</a>
+    </div>
+    <div class="project-card">
+      <a href="https://jeyo-l.github.io/hackerrank-online-Eplatform/home/">E-Learning Skills Pro</a>
+    </div>
+    <div class="project-card">
+      <a href="https://jeyo-l.github.io/design-challenges/Algorithm/alg.html">Algorithm Challenges</a>
+    </div>
+    <div class="project-card">
+      <a href="https://jeyo-l.github.io/design-challenges/">Final Challenge</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>2024 Abdul. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Additional functionality (optional)
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+      });
+    });
+  </script>
+</body>
+</html>
