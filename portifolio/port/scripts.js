@@ -78,7 +78,7 @@ function typeText() {
             const currentLine = typingEffectElement.lastChild;
             currentLine.textContent += textLines[lineIndex][charIndex];
             charIndex++;
-            setTimeout(typeText, 50);
+            setTimeout(typeText, 100);
             
         } else {
             charIndex = 0;
